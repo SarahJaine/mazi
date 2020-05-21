@@ -7,7 +7,6 @@ import argparse
 from collections import defaultdict, OrderedDict
 import csv
 from datetime import date, timedelta
-from itertools import chain
 import random
 
 
@@ -162,7 +161,7 @@ SONG_ORDER = \
 	REGULAR_SET
 
 # Create song catalog
-PLAYLIST_LOCATION = 'Downloads/mazi_song - songs.csv'
+PLAYLIST_LOCATION = '../Downloads/mazi_song - songs.csv'
 CATALOG = build_catalog_from_file(PLAYLIST_LOCATION)
 BLANK_PLAYLIST = create_intensity_count_map(SONG_ORDER)
 
